@@ -92,7 +92,7 @@ if (numero === 0) {
 
 /*7)Escriba un programa en el cual se ingrese un valor límite positivo, y a continuación
 solicite números al usuario hasta que la suma de los números introducidos supere el
-límite inicial.  */
+límite inicial.  
 
 const limite = parseInt(prompt("Ingrese valor limite positivo"));
 let suma = 0;
@@ -100,6 +100,52 @@ while (suma < limite) {
     const numero = parseInt(prompt("Ingrese numero positivo"));
     suma += numero;
 }
-alert("El valor supero o igualo el limite " + suma);
+alert("El valor supero o igualo el limite " + suma);*/
+
+/*---------------------------------------------------------------------------------------------*/
+
+/*8)Escribir un programa que lea números enteros hasta teclear 0 (cero). Al finalizar el
+programa se debe mostrar el máximo número ingresado, el mínimo, y el promedio de
+todos ellos.  */
+
+
+let numeros = []; 
+let numero = 1; 
+
+while (numero != 0) {
+  numero = parseInt(prompt("Ingrese un número entero (ingrese 0 para terminar):"));
+  if (numero != 0) {
+    numeros.push(numero); 
+  }
+}
+
+if (numeros.length > 0) {
+  let maximo = Math.max(numeros); 
+  let minimo = Math.min(numeros); 
+  let suma = 0;
+
+  for (let i = 0; i < numeros.length; i++) {
+    suma += numeros[i]; 
+  }
+
+  let promedio = suma / numeros.length; 
+
+  alert("El máximo número ingresado es: " + maximo);
+  alert("El mínimo número ingresado es: " + minimo);
+  alert("El promedio de los números ingresados es: " + promedio);
+} else {
+  alert("No se ingresaron números.");
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /*---------------------------------------------------------------------------------------------*/
