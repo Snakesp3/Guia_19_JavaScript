@@ -108,7 +108,7 @@ alert("El valor supero o igualo el limite " + suma);*/
 programa se debe mostrar el máximo número ingresado, el mínimo, y el promedio de
 todos ellos.  */
 
-
+/* 
 let numeros = []; 
 let numero = 1; 
 
@@ -135,17 +135,46 @@ if (numeros.length > 0) {
   alert("El promedio de los números ingresados es: " + promedio);
 } else {
   alert("No se ingresaron números.");
-}
-
-
-
-
-
-
-
-
-
-
-
+}*/
 
 /*---------------------------------------------------------------------------------------------*/
+/*9)Realizar un programa que pida una frase y el programa deberá mostrar la frase con un
+espacio entre cada letra. La frase se mostrara así: H o l a. Nota: recordar el
+funcionamiento de la función Substring().
+
+let frase = prompt("Ingrese una frase");
+
+let fraseConEspacio = "";
+
+for (let i = 0; i < frase.length; i++) {
+  fraseConEspacio +=frase.substring(i,i+1) + " ";
+
+  alert(fraseConEspacio.trim());
+}
+document.write("GRACIAS!!!");*/
+
+/*---------------------------------------------------------------------------------------------*/
+/*10)Escribir una función flecha que reciba una palabra y la devuelva al revés.  */
+
+
+// Función flecha que recibe una palabra y la devuelve al revés
+
+// Función flecha que recibe una palabra y la devuelve al revés
+const reverseWord = (word) => {
+  return word.split('').reverse().join('');
+}
+
+alert(reverseWord('hola')); 
+alert(reverseWord('JavaScript')); 
+
+/*---------------------------------------------------------------------------------------------*/
+
+
+
+
+
+ 
+
+
+
+
