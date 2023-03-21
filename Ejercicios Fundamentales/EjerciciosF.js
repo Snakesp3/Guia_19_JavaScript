@@ -154,23 +154,29 @@ for (let i = 0; i < frase.length; i++) {
 document.write("GRACIAS!!!");*/
 
 /*---------------------------------------------------------------------------------------------*/
-/*10)Escribir una función flecha que reciba una palabra y la devuelva al revés.  */
+/*10)Escribir una función flecha que reciba una palabra y la devuelva al revés.  
 
-
-// Función flecha que recibe una palabra y la devuelve al revés
-
-// Función flecha que recibe una palabra y la devuelve al revés
 const reverseWord = (word) => {
   return word.split('').reverse().join('');
 }
 
 alert(reverseWord('hola')); 
-alert(reverseWord('JavaScript')); 
+alert(reverseWord('JavaScript'));*/ 
 
 /*---------------------------------------------------------------------------------------------*/
 
+/*11)Escribir una función que reciba un String y devuelva la palabra más larga.
+String Ejemplo: “Guia de JavaScript”
+Resultado esperado : “JavaScript”
+ */
+
+const esMayorDeEdad = ();
 
 
+
+
+
+/*---------------------------------------------------------------------------------------------*/
 
 
  
