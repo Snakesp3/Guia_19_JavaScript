@@ -168,19 +168,45 @@ alert(reverseWord('JavaScript'));*/
 /*11)Escribir una función que reciba un String y devuelva la palabra más larga.
 String Ejemplo: “Guia de JavaScript”
 Resultado esperado : “JavaScript”
- */
+ 
 
-const esMayorDeEdad = ();
+const encontrarPalabraMasLarga = cadena => {
+  
+  const palabras = cadena.split(" ");
+  let palabraMasLarga = "";
+  
+ 
+  palabras.forEach(palabra => {
+    if (palabra.length > palabraMasLarga.length) {
+      palabraMasLarga = palabra;
+    }
+  });
+  
+  return palabraMasLarga;
+}
 
 
-
-
+const cadena = "Guia de seba";
+const resultado = encontrarPalabraMasLarga(cadena);
+alert(resultado); // Imprime "JavaScript"*/
 
 /*---------------------------------------------------------------------------------------------*/
 
+/*12)Escribir una función flecha de JavaScript que reciba un argumento y retorne el tipo de
+dato. 
 
- 
+const tipoDeDato = (dato) =>{
 
+return typeof dato;
+} 
 
+alert(tipoDeDato ("Seba"));
+alert(tipoDeDato (123));
+alert(tipoDeDato (true));
+alert("GRACIAS!");*/
 
+/*---------------------------------------------------------------------------------------------*/
+
+/*13) Crear un objeto persona, con las propiedades nombre, edad, sexo ('H' hombre, 'M' mujer,
+'O' otro), peso y altura. A continuación, muestre las propiedades del objeto JavaScript. */
 
