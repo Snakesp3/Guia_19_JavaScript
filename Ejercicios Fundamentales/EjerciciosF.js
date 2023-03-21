@@ -239,11 +239,37 @@ Número de páginas. Crear un método para cargar un libro pidiendo los datos al
 y luego informar mediante otro método el número de ISBN, el título, el autor del libro y el
 numero de páginas. */
 
+class libro  {
 
+constructor(){
+this.isbn = "";
+this.titulo="";
+this.autor="";
+this.paginas=0;
+}
 
+cargarLibro() {
 
+  this.isbn = prompt("Ingrese el ISBN de Libro");
+  this.titulo = prompt("Ingrese el Titulo de Libro");
+  this.autor = prompt("Ingrese el Autor de Libro");
+  this.paginas = prompt("Ingrese la cantidad de Paginas del Libro");
+}
 
+mostrarLibro (){
 
+document.write( `El ISBN del libro es : \n ${this.isbn}`);
+
+document.write( `El Titulo del libro es : \n ${this.titulo}`);
+document.write( `El Autor del libro es : \n ${this.autor}`);
+document.write( `Cantidad de paginas del libro : \n ${this.paginas}`);
+}
+
+}
+
+const miLibro = new libro();
+miLibro.cargarLibro();
+miLibro.mostrarLibro();
 
 
 
