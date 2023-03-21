@@ -208,5 +208,44 @@ alert("GRACIAS!");*/
 /*---------------------------------------------------------------------------------------------*/
 
 /*13) Crear un objeto persona, con las propiedades nombre, edad, sexo ('H' hombre, 'M' mujer,
-'O' otro), peso y altura. A continuación, muestre las propiedades del objeto JavaScript. */
+'O' otro), peso y altura. A continuación, muestre las propiedades del objeto JavaScript. 
 
+let persona = {
+  nombre: "JuanaLaCubana",
+  edad: 30,
+  sexo: "M",
+  peso: 78,
+  altura: 170
+};
+let persona1 = {
+  nombre: "Seba",
+  edad: 36,
+  sexo: "H",
+  peso: 73,
+  altura: 180
+};
+for (let propiedad in persona) {
+  console.log(propiedad + ": " + persona[propiedad]);
+}
+
+for (let propiedad1 in persona) {
+  console.log(propiedad1 + ": " + persona1[propiedad1]);
+}*/
+
+/*---------------------------------------------------------------------------------------------*/
+
+/*14) Crear un objeto libro que contenga las siguientes propiedades: ISBN, Título, Autor,
+Número de páginas. Crear un método para cargar un libro pidiendo los datos al usuario
+y luego informar mediante otro método el número de ISBN, el título, el autor del libro y el
+numero de páginas. */
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------*/
